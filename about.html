@@ -8,31 +8,35 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="linklogo.png">
     <style>
-        #banner{
-            background-image: url(img/banner/shopping-bag-cart.jpg);
+    /*about page*/
+        .about-header {
+            background: url(about/about.jpg);
             width: 100%;
-            height: 60vh;
+            height: 40vh;
             background-size: cover;
-            background-position: top 70px center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             display: flex;
-            flex-direction: column;
+            line-height: 23px;
             justify-content: center;
-            align-items: center;
-            padding-left: 75px;
-            padding-top: 150px;
-        }
-        #banner h4{
-           color: black;
-           text-align: center;
-        }
-        #banner h1{
-            color: #fff;
             text-align: center;
+            flex-direction: column;
         }
-        #banner span{
-            color: coral;
+
+        .about-header p {
+            margin-top: 105px;
+        }
+
+        #about-head {
+            display: flex;
+            align-items: center;
+        }
+
+        #about-head img {
+            width: 50%;
+            height: auto;
+        }
+
+        #about-head div {
+            padding-left: 40px;
         }
     </style>
   </head>
@@ -48,7 +52,7 @@
       <ul class="navbar-nav ml-auto">
        
         <li class="nav-item">
-          <a class="nav-link active" href="home.html">Home</a>
+          <a class="nav-link " href="home.html">Home</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="shop.html">Shop</a>
@@ -57,7 +61,7 @@
           <a class="nav-link" href="blog.html">Blog</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link active" href="about.html">About</a>
         </li>
          <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -74,83 +78,32 @@
   </div>
     </nav>
     <!-- end of nav bar-->
-     <section id="banner" >
-        <div class="">
-            <h4>Great Indian Sale</h4>
-            <h1>Winter Collections <br>Upto <span>40% off</span></h1>
-        </div>
+
+    <section class="about-header container-fluid">
+      <h2>Who We Are</h2>
+      <p>Discover the Heart and Soul of SwiftCart</p>
     </section>
 
-     <section id="cart" class="container mt-5 py-5">
-      <table width="100%">
-        <thead>
-          <tr>
-            <td>Remove</td>
-            <td>Image</td>
-            <td>Product</td>
-            <td>Price</td>
-            <td>Quantity</td>
-            <td>Subtotal</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><i class="fa-solid fa-xmark"></i></td>
-            <td><img src="img/clothes/1.jpg" alt="" /></td>
-            <td>Adidas special T-shirt</td>
-            <td>₹1850</td>
-            <td><input type="number" value="1" /></td>
-            <td>₹1850</td>
-          </tr>
-          <tr>
-            <td><i class="fa-solid fa-xmark"></i></td>
-            <td><img src="img/clothes/1.jpg" alt="" /></td>
-            <td>Adidas special T-shirt</td>
-            <td>₹1850</td>
-            <td><input type="number" value="1" /></td>
-            <td>₹1850</td>
-          </tr>
-          <tr>
-            <td><i class="fa-solid fa-xmark"></i></td>
-            <td><img src="img/clothes/1.jpg" alt="" /></td>
-            <td>Adidas special T-shirt</td>
-            <td>₹1850</td>
-            <td><input type="number" value="1" /></td>
-            <td>₹1850</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="cart-add" class="container mt-5 py-5">
-      <div id="coupon">
-        <h3>Apply coupon</h3>
-        <div>
-          <input type="text" placeholder="Enter your coupon" />
-          <button class="normal">Apply</button>
-        </div>
-      </div>
-      <div id="subtotal">
-        <h3>Cart totals</h3>
-        <table>
-          <tr>
-            <td>Cart Subtotal</td>
-            <td>₹1850</td>
-          </tr>
-          <tr>
-            <td>Shipping</td>
-            <td>Free</td>
-          </tr>
-          <tr>
-            <td><strong>Total</strong></td>
-            <td><strong>₹1850</strong></td>
-          </tr>
-        </table>
-        <button class="normal">Proceed to checkout</button>
+    <section id="about-head container-fluid" class="mt-5 py-5">
+      <img src="about/a1.jpg" alt="" />
+      <div>
+        <h2>Who are we??</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Exercitationem quibusdam, reprehenderit blanditiis nihil iure
+          praesentium fuga eveniet qui nostrum voluptates incidunt quas saepe
+          mollitia corrupti sed vel asperiores perspiciatis enim reiciendis rem
+          dolorem repellat! Soluta doloribus ad placeat deserunt ipsum.
+          Assumenda nisi debitis quasi rerum!
+        </p>
+        <br /><br />
+        <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%"
+          >Awesome clothes for you lined up here for you every moment</marquee
+        >
       </div>
     </section>
 
-     <footer class="mt-5 py-5">
+    <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="final2.png" alt="">
