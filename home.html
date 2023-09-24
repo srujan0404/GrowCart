@@ -433,37 +433,38 @@
     </footer>
 
     <!-- //Login Pop Up -->
-    <div id="LoginPop" class="modal">
+   
+        <div id="LoginPop" class="modal">
   
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('LoginPop').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="final.png" alt="Avatar" class="avatar">
+            <form class="modal-content animate" action="#" method="get" onsubmit="return false">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('LoginPop').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="final.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                  
+                <button type="submit" id="login">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('LoginPop').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
           </div>
-      
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" id="username" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw"  id="password" required>
-              
-            <button type="submit" id="login">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('LoginPop').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw"><a href="#">Forgot password?</a></span>
-          </div>
-        </form>
-      </div>
 
     <script src="https://kit.fontawesome.com/f613a155c9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="./basic.js" ></script>
+    <script src="./basic.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
   </body>
 </html>
