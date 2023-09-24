@@ -395,6 +395,14 @@ span.psw {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
 }
+.section-p1 {
+    margin: 40px 80px;
+    overflow: hidden;
+}
+
+.section-m1 {
+    margin: 60px 0;
+}
 
 /* Modal Content/Box */
 .modal-content {
