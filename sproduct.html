@@ -26,6 +26,29 @@
         .product{
             cursor: normal;
         }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .sproduct a{
+            text-decoration: none;
+            color: black;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .sproduct .buy-btn{
+            background-color: #fb774b;
+            opacity: 1;
+            transition: 0.3s ease all;
+        }
     </style>
   </head>
   <body>
@@ -64,10 +87,10 @@
     </nav>
     <!-- end of nav bar-->
 
-    <section class="container-fluid product my-5 pt-5 pl-5" style="cursor: auto">
+    <section class="container-fluid sproduct my-5 pt-5 pl-5" style="cursor: auto">
         <div class="row mt-5">
             <div class="col-lg-5 col-md-12 col-12">
-                <img class="img-fluid w-100 pb-1"  src="img/shop/h1.jpeg" alt="">
+                <img class="img-fluid w-100 pb-1"  src="img/shop/h1.jpeg" id="Mainimg" alt="">
                 <div class="small-img-group">
                     <div class="small-img-col">
                         <img src="img/shop/1.jpg" width="100%" class="small-img" alt="">
@@ -103,7 +126,88 @@
           of the target audiences. Hence, your first task comes into play.
           Instead of eyeballing, be sure whom you are writing for. A good way is
           to start with crafting buyer personas.</span>
+          <div>
+        <h2 class="py-5 compo">Composition</h2>
+        <p>We work with monitoring programmes to ensure compliance with our social, environmental and health and safety standards for our products. To assess compliance, we have developed a programme of audits and continuous improvement plans.
+        <br>UPPER:<br>
+100% cow leather
+          <br>LINING: <br>
+51% cow leather
+36% polyester
+13% polyamide
+          <br>CARE: <br>
+Caring for your clothes is caring for the environment.
+Simple steps like cleaning your clothing with a dry cotton cloth or a soft brush, depending on the characteristics of the product, can help you care for it. Whenever possible, try to use products that are respectful of the environment.
+          <br>72% Recycled polyester <br>
+          We exclude the weight of minor components such as, but not exclusively: threads, buttons, zippers, embellishments and prints.
+
+The total weight of the product is calculated by adding the weight of all layers and main components together. Based on that, we calculate how much of that weight is made out by each material.
+</p>
+          <a href=""><i class="fa-solid fa-whiskey-glass"></i>    Do not wash</a> <br>
+          <a href=""><i class="fa-brands fa-accessible-icon"></i>    Not for old people</a>
+      </div>
         </div>
+    </section>
+
+     <section id="featured" class="my-5 pb-5">
+         <div class="container text-center mt-5 py-5">
+            <h3>Based on this Product</h3>
+            <hr class="mx-auto">
+         </div>
+         <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/featured/1.jpg" alt="">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">₹2500</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/featured/2.jpg" alt="">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">₹2500</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/featured/3.jpg" alt="">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">₹2500</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/featured/4.jpg" alt="">
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">₹2500</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+         </div>
     </section>
 
     <footer class="mt-5 py-5">
@@ -167,9 +271,17 @@
         </div>
     </footer>
 
-
      <script src="https://kit.fontawesome.com/f613a155c9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script>
+        var Mainimg = document.getElementById('Mainimg');
+        var smallimg = document.getElementsByClassName('small-img');
+
+        smallimg[0].onclick = function(){
+            Mainimg.src
+        }
+    </script>
   </body>
 </html>
+
