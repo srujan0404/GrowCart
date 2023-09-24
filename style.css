@@ -684,4 +684,8 @@ span.psw {
     /*change the color again to black*/
 }
 
-    
+.error{
+    color:red;
+    display: none;
+    font-weight: 800;
+}

@@ -63,7 +63,13 @@ for (let i = 0; i < buynow.length; i++) {
 
 // Add event listener to the login button
 document.getElementById("login").addEventListener("click", function () {
-  AddDocument_AutoID();
+  document.getElementById("LoginPop").style.display = "none";
+  if (document.getElementById("loginaa").innerHTML == "Log In") {
+    AddDocument_AutoID();
+    document.getElementById("loginaa").innerHTML = "Sign out";
+  } else {
+    document.getElementById("loginaa").innerHTML = "Log In";
+  }
 });
 
 // Add Documents
@@ -88,3 +94,31 @@ async function AddDocument_AutoID() {
 
   //console.log("Document added with ID: ", docRef.id);
 }
+
+var modal = document.getElementById("id01");
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+var modal1 = document.getElementById("LoginPop");
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+};
+
+document.getElementById("signup").addEventListener("click", function () {
+  if (
+    document.getElementById("signpass1").value ==
+    document.getElementById("signpass2").value
+  ) {
+  } else {
+    document.getElementsByClassName("error")[1].style.display = "block";
+  }
+});
