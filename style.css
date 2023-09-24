@@ -81,6 +81,9 @@ button:hover{
     /* font-weight: 500; */
     transition: 0.3s ease; 
 }
+.navbar .number{
+    padding-left: 1px;
+}
 #bar{
     font-size: 1.5rem;
     padding: 7px;
@@ -232,6 +235,20 @@ button:hover{
     transform: translateY(0);
     opacity: 1;
 }
+#sbanner{
+    background-image: url(img/banner/black-friday-sales-arrangement-with-shopping-cart.jpg);
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: top 70px center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 150px;
+}
 #banner{
     background-image: url(img/banner/b3.jpg);
     width: 100%;
@@ -295,6 +312,26 @@ footer .copyright a:hover{
     background-color: #fb774b;
 }
 
+/*blog page*/
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+
+}
+#blog-container .post:hover img{
+    transition: 0.3s ease;
+}
+#blog-container .post:hover img{
+    transform: scale(1.3) rotate(-10deg);
+    opacity: 0.8;
+}
+#blog-container .post h3{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+#blog-container .post:hover h3{
+    color: #fb774b;
+}
 /* new css?? */
 
 
@@ -358,6 +395,14 @@ span.psw {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
 }
+.section-p1 {
+    margin: 40px 80px;
+    overflow: hidden;
+}
+
+.section-m1 {
+    margin: 60px 0;
+}
 
 /* Modal Content/Box */
 .modal-content {
@@ -409,3 +454,234 @@ span.psw {
      width: 100%;
   }
 }
+
+/*cart page*/
+/*cart page*/
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100%;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 100%;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 100%;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 100%;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e1e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#coupon button {
+    background-color: #fb774b;
+    color: white;
+    padding: 12px 20px;
+}
+
+#coupon button:hover {
+    background-color: #86e7e0;
+    color: black;
+    padding: 12px 20px;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#subtotal button {
+    background-color: #fb774b;
+    color: white;
+}
+
+#subtotal button:hover {
+    background-color: #86e7e0;
+    color: black;
+    /*cahnge this black*/
+}
+/*contact page*/
+.contact-head {
+    background-image: url(img/banner/contact.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    line-height: 23px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+    background-color: #fb774b;
+    color: white;
+}
+
+#form-details form button:hover {
+    background-color: #f1ad96;
+    color: black;
+    /*change the color again to black*/
+}
+
+    
