@@ -72,6 +72,7 @@ document.getElementById("login").addEventListener("click", function () {
       //alert(val);
       //document.getElementById("LoginPop").style.display = "none";
       if (val == document.getElementById("password").value) {
+        document.getElementById("loginaa").innerHTML = "Sign out";
         document.getElementById("LoginPop").style.display = "none";
         document.getElementById("snackbar").innerHTML = "Login SuccessFull!!";
         myFunction();
@@ -85,7 +86,6 @@ document.getElementById("login").addEventListener("click", function () {
           "Incorrect Password!!";
       }
     });
-    document.getElementById("loginaa").innerHTML = "Sign out";
   } else {
     document.getElementById("loginaa").innerHTML = "Log In";
   }
